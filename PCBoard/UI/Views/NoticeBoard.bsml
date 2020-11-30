@@ -1,0 +1,18 @@
+﻿<bg xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='https://raw.githubusercontent.com/monkeymanboy/BSML-Docs/gh-pages/BSMLSchema.xsd'>
+
+	<horizontal spacing="0" vertical-fit="Unconstrained" child-align="MiddleCenter" ignore-layout="true">
+		<scrollable-container id="noticeboard-scrollcontainer" child-expand-height="false" child-control-height="true" child-expand-width="true" child-control-width="true" mask-overflow="true">
+			<vertical preferred-width="150">
+				<text text="~noticeboard-text" rich-text="true" word-wrapping="true"/>
+			</vertical>
+		</scrollable-container>
+
+		<vertical preferred-width="1" child-align="MiddleRight" anchor-min-x="0.95" anchor-max-x="1" ignore-layout="true" spacing="0">
+			<page-button click-event='noticeboard-scrollcontainer#PageUp' direction='Up' pref-width='5' pref-height='2'/>
+			<vertical-scroll-indicator tags='IndicatorFor:noticeboard-scrollcontainer'/>
+			<page-button click-event='noticeboard-scrollcontainer#PageDown' direction='Down' pref-width='5' pref-height='2'/>
+		</vertical>
+
+	</horizontal>
+</bg>
